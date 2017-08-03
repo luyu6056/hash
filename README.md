@@ -23,4 +23,9 @@ echo myhash('123123');         //YR60CgOJxbO0B3L0
 
 echo myhash('123','123','32'); //81a5f39275fd8f97a79494df034ff6db
 
-echo myhash('123','123','32'); //5e82d06f52da6c74464e2f4427d2e733
+echo myhash('123','','32');    //5e82d06f52da6c74464e2f4427d2e733
+
+## JS Example
+The same as php
+myhash('123','123','32'); //81a5f39275fd8f97a79494df034ff6db
+

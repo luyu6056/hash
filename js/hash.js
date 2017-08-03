@@ -26,14 +26,14 @@ function myhash(t,h,y){
 	if(y=='32'){
 		//32位长度十六进制值输出
 		for(var i=0;i<b.length;i++){
-			re.push(b[i].toString(16).toLowerCase());
+			re.push(b[i].toString(16));
 		}
 	}else{
 		for(var i=0;i<b.length;i++){
 			re.push(to62(b[i]%62));//简单62进制转换输出
 		}
 	}
-	return re.join('');
+	return re.join('').toLowerCase();
 }
 function to62(b){
 	if(b<10){

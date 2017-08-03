@@ -1,3 +1,5 @@
+<?php
+
 function myhash($text,$hmac="34819d7be",$type='16'){
 	$b = s2b($text);
     if(strlen($text)<17){
@@ -70,3 +72,4 @@ function s2b($text){
     }
     return $result;
 }
+?>

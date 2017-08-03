@@ -1,6 +1,5 @@
 <?php
-
-function myhash($text,$hmac="34819d7be",$type='16'){
+function myhash($text,$hmac="",$type='16'){
 	$b = s2b($text);
     if(strlen($text)<17){
         $hex=array(84,132,208,48,203,33,214,6,173,140,172,227,23,205,112,177,173);

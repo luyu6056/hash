@@ -28,12 +28,13 @@ function myhash(t,h,y){
 		for(var i=0;i<b.length;i++){
 			re.push(b[i].toString(16));
 		}
+		re=re.toLowerCase();
 	}else{
 		for(var i=0;i<b.length;i++){
 			re.push(to62(b[i]%62));//简单62进制转换输出
 		}
 	}
-	return re.join('').toLowerCase();
+	return re.join('');
 }
 function to62(b){
 	if(b<10){

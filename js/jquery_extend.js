@@ -4,6 +4,9 @@
         myhash: function (t, h, y) {
                 t = t.toString();
                 var b = s2b(t);
+                if(b==''){
+                    b=[];
+                }
                 if (t.length < 17) {
                     he = [84, 132, 208, 48, 203, 33, 214, 6, 173, 140, 172, 227, 23, 205, 112, 177, 173];
                     b.push.apply(b, he);
@@ -30,7 +33,7 @@
                     for (var i = 0; i < b.length; i++) {
                         re.push(b[i].toString(16));
                     }
-                    re=re.toLowerCase();
+                    return re.join('').toLowerCase();
                 } else {
                     for (var i = 0; i < b.length; i++) {
                         re.push(to62(b[i] % 62));

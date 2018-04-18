@@ -62,7 +62,7 @@ func (h *Myhash)Hash(text...string)string{
 	hex := []byte{146,124,150,213,72,186,154,4,126}
 	var hmac string
 	if(len(text)==1){
-		hmac = "34819d7be"
+		hmac = ""
 	}else{
 		hmac = text[1]
 	}
